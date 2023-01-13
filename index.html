@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+
+    <meta name="description" content="&lt;model-viewer&gt; template">
+
+
+
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico"/> -->
-
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
     <!-- =====BOX ICONS & FONT AWESOME===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <title>Snehal Tandel : Resume Website</title>
 </head>
 
@@ -38,41 +45,7 @@
                                 class='bx bx-file bx-sm'></i></a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link nav-icon"><i
                                 class='bx bx-message bx-sm'></i></a></li><br>
-                    <head>
-                        <meta charset="UTF-8" />
-                        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                        <title>Document</title>
-                        <style>
-                        body {
-                            padding: 25px;
-                            background-color: white;
-                            color: black;
-                            /* font-size: 25px; */
-                        }
-                        .dark-mode {
-                            background-color: black;
-                            color: white;
-                        }
-                        </style>
-                    </head>
-                    <body>
-                        <div>
-                        <button onclick="darkMode()">Darkmode</button>
-                        </div>
-                        <script>
-                        function darkMode() {
-                            var element = document.body;
-                            element.classList.toggle("dark-mode");
-                        }
-                        </script>
-                    </body>
-
-
-
-
-                    
-                    </html>
+                
                 </ul>
             </div>
 
@@ -101,8 +74,14 @@
                         class='bx bxl-github'></i></a>
             </div>
 
-            <div class="home__img">
-                <img src="assets/img/profile.JPG" alt="Profile Image">
+            <div class="home_img">
+                <!-- <img src="assets/img/profile.JPG" alt="Profile Image"> -->
+                <!-- <model-viewer alt="snehal-tandel-989a54205" src="assets/img/Snehal.glb"   shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+                 -->
+                 <!-- <model-viewer> HTML element -->
+                    <model-viewer src="./assets/img/Snehal.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls  shadow-intensity="1"> </model-viewer>
+                    <!-- Loads <model-viewer> for browsers: -->
+                    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             </div>
         </section>
 
@@ -116,10 +95,7 @@
 
                 <div>
                     <h2 class="about__subtitle">I'am Snehal</h2>
-                    <p style="margin-top: 5px;"> <p style div {
-                          border: 1px solid black;
-                          text-align: justify;
-                        }> Data Scientist with strong math background and 1 year +  experience using predictive modeling, 
+                    <p style="margin-top: 5px;"><p style="text-align:justify"> Scientist with strong math background and 1 year +  experience using predictive modeling, 
                         data processing, and data mining algorithms to solve challenging business problems. 
                         Involved in Python open source community and passionate about deep learning.
                         
@@ -130,11 +106,8 @@
                         <li style="margin-left: 0.1em;"><i class='bx bx-tag-alt'></i> <b>City:</b> Navsari, Gujarat</li>
                         <li style="margin-left: 0.1em;"><i class='bx bx-tag-alt'></i> <b>University:</b> Rastriya Raksha University,  Gandinagar</li>
                         <li style="margin-left: 0.1em;"><i class='bx bx-tag-alt'></i> <b>Departmant:</b> Data science & Machine Learning</li>
-                        <li style="margin-left: 0.1em;"><i class='bx bx-tag-alt'></i> <b>Education:</b><br></i><li style="margin-left: 1em;"><b>PG Diploma in Data Science & Machine Learning</b><br>Rastriya Raksha University ,Gandhinagar<br>Nov 2020 – Nov 2021<br>
+                        <li style="margin-left: 0.1em;"><i class='bx bx-tag-alt'></i> <b>Education:</b><br></i><li style="margin-left: 1em;"><b>PG Diploma in Data Science & Machine Learning</b><br>Rastriya Raksha University ,Gandhinagar<br>Nov 2020 – Nov 2021<br>     
                             <b>BSc Physics-Maths</b> <br>B.P.Baria Science Institute, Navsari<br>Jun 2017 – Jun 2020</li>
-    
-
-                        </p>
                     </ul>
                     </p>
                 </div>
@@ -202,10 +175,6 @@
             </div>
         </section>
 
-
-
-
-
         <!--===== Experience =====-->
         <section class="skills section" id="Experience">
             <h2 class="section-title">Experience</h2>
@@ -219,18 +188,30 @@
                     <div class="experiance__data">
                         <div class="skills__names">
                             <!-- <i class='bx bx-code-alt skills__icon'></i> -->
-                        <span class="skills__name"><b>Blue Data Consulting Pvt Ltd</b> <br> Nov-2021 to Present                               
+                        <span class="about__text"><b>Blue Data Consulting Pvt Ltd</b> <br> Nov-2021 to Present                               
                             
                         </span></span>
                         </div>
                             </div>
-                                <p style="margin-top: 5px;"> <p style="text-align: justify;">  
-                                </i><li style="margin-left: 1em;" style="text-align:justify"><b> A live object detection and classification project using YOLO would involve building a system that can detect and classify objects in real-time video streams.
-                                    The project would likely involve the use of programming languages such as Python as well as a number of open-source libraries and frameworks, such as OpenCV and TensorFlow.
-                                    </li><br><br>
-                                    <b>project 2</b>
-                            
+                                <p style="margin-top: 5px;" style="text-align: justify;">  
+                                <li style="text-align:justify;padding-left:20px;margin-top: 20px;">A live object detection and classification project using YOLO would involve building a system that can detect and classify objects in real-time video streams.
+                                    The project would likely involve the use of programming languages such as Python as well as a number of open-source libraries and frameworks, such as OpenCV and TensorFlow.</b> 
+                                    </li></li></ul>
+                
+                                </p></p>
                             <p class="about__text">
+
+                            <p style="margin-top: 15px;" style="text-align: justify;">  
+                                <li style="text-align:justify;padding-left:20px;">An automated document verification project is one that uses technology to verify the authenticity of physical or digital documents. This can include things like  IDs, company documents and other forms of identification. The process typically involves scanning the document and using optical character recognition (OCR) to extract the text, then comparing the information on the document with a database or other source to confirm its validity.</b> 
+                                    </li></li></ul>
+                                </p></p>
+                            <p class="about__text">
+                            <p style="margin-top: 15px;" style="text-align: justify;">  
+                                <li style="text-align:justify;padding-left:20px;">A future appointment prediction project would involve using historical data and machine learning algorithms to predict when a patient is likely to schedule their next appointment. The goal of the project would be to provide healthcare providers with a better understanding of patient behavior and to improve appointment scheduling and patient retention.</b> 
+                                    </li></li></ul>
+                                </p></p>
+                            <p class="about__text">
+                            
 
                     <!-- End -->
                 </div>
@@ -242,7 +223,7 @@
         </section>
 
 
-        <!--===== PROJECT (TODO:: Github Repo's with API and Flask)=====-->
+        <!--===== PROJECT =====-->
         <section class="work section" id="project">
             <h2 class="section-title">Projects</h2>
 
@@ -252,20 +233,27 @@
                     <a target="_blank"><img
                             src="assets/img/work_4.png" alt=""></a>
                     <div class="overlay">
-                        <div class="content">Leaf Disease Detection using Deep learning<br><span class="detail_work"
+                        <div class="content"><b>Leaf Disease Detection using Deep learning</b><br><span class="detail_work"
                                 style="text-align: justify;" > The goal of the project is to develop a deep learning model that can accurately and efficiently detect leaf diseases from images of potato leaves, which can then be used in the field of agriculture to help farmers identify and treat diseases on their crops.    
                                 </span>
                         </div>
                     </div>
                 </div>
                 <!--END-->
-
+                <div class="work__img ">
+                    <a href="https://github.com/snehal201/object_tracking" target="_blank"><img src="assets/img/work_3.jpg" alt=""></a>
+                    <div class="overlay">
+                        <div class="content"><br><b>Object Tracking</b><br><span class="detail_work"
+                                style="text-align: justify;">The goal of an object tracking project is to develop a model that can accurately and efficiently detect and locate an object of interest in a video stream, which can be used in a wide range of applications such as surveillance, robotics, and autonomous vehicles.</span>
+                        </div>
+                    </div> 
+                </div>
                 <!-- NEW START-->
                 <div class="work__img ">
                     <a href="https://github.com/snehal201/internal-exam/blob/master/NYC_parking_ticket_.ipynb" target="_blank"><img
                             src="assets/img/work_1.jpeg" alt=""></a>
                     <div class="overlay">
-                        <div class="content">NYC Parking ticket analysis<br><span class="detail_work"
+                        <div class="content"><b>NYC Parking ticket analysis</b><br><span class="detail_work"
                                 style="text-align: justify;"> NYC Parking Ticket Analysis is a project that aims to analyze and understand the patterns and trends in the issuance of parking tickets in New York City. The project involves collecting and cleaning a dataset of NYC parking ticket data, exploring and visualizing the data    
                                 </span>
                         </div>
@@ -275,22 +263,34 @@
                     <a href="https://github.com/snehal201/BOW-using-PySpark/blob/master/all_news_data_with_pyspark_2.ipynb" target="_blank"><img
                             src="assets/img/work_2.png" alt=""></a>
                     <div class="overlay">
-                        <div class="content">News dataset with PySpark<br><span class="detail_work"
+                        <div class="content"><b>News dataset with PySpark</b><br><span class="detail_work"
                                 style="text-align: justify;">
                                 A news dataset with PySpark project is a project that aims to process a large dataset of news articles using the PySpark library.Perform text classification by applying Clearing text, Normalization, Tokenization ,Remove Stopwords, stemming function and crating bag of most frequent words.</span>
                         </div>
                     </div>
                 </div>
+    
+
                 <div class="work__img ">
-                    <a href="https://github.com/snehal201/object_tracking" target="_blank"><img
-                            src="assets/img/work_3.jpg" alt=""></a>
+                    <a  target="_blank"><img src="assets/img/work_5.png.jpg" alt=""></a>
                     <div class="overlay">
-                        <div class="content"><br>Object Tracking<br><span class="detail_work"
-                                style="text-align: justify;">The goal of an object tracking project is to develop a model that can accurately and efficiently detect and locate an object of interest in a video stream, which can be used in a wide range of applications such as surveillance, robotics, and autonomous vehicles.</span>
+                        <div class="content"><b>Google stock Price prediction using TSF</b><br><span class="detail_work"
+                                style="text-align: justify;">A Google stock price prediction project would involve using historical data on Google's stock price to train a machine learning model. The model would then use this information to make predictions about future stock prices. 
+                        </span>
                         </div>
                     </div> 
                 </div>
-    
+
+                <div class="work__img ">
+                    <a  target="_blank"><img src="assets/img/work_6.png.jpg" alt=""></a>
+                    <div class="overlay">
+                        <div class="content"><b>Automate sentiment analysis of Textual comments</b><br><span class="detail_work"
+                                style="text-align: justify;">A project to automate sentiment analysis  would involve using natural language processing (NLP) techniques to classify the sentiment of tweets as positive, negative, or neutral.The end goal of the project would be to create a system that can automatically classify the sentiment of tweets 
+                        </span>
+                        </div>
+                    </div> 
+                </div>
+
             
             </div>
         </section>
@@ -351,9 +351,43 @@
     <!--===== LOADER =====-->
     <!-- TODO :: ADD LOADER FOR DYNAMIC WEBSITE-->
 
+
+
+    <!--===== DARK MODE =====-->   
+        <!-- <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Document</title>
+            <style>
+            body {
+                padding: 25px;
+                background-color: white;
+                color: black;
+                /* font-size: 25px; */
+            }
+            .dark-mode {
+                background-color: black;
+                color: white;
+            }
+            </style>
+        </head>
+        <body>
+            <div>
+            <button onclick="darkMode()">Darkmode</button>
+            </div>
+            <script>
+            function darkMode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+            </script>
+        </body> -->
+
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
     <!-- ==== SLIDER ====-->
