@@ -18,8 +18,8 @@
 
 <body>
     <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
+    <header class="l-header">        
+        <nav class="nav bd-grid-heder">
             <div>
                 <a href="#" class="nav__logo"><img style="width: 4.8rem;" src="assets/img/logo.jpg" alt=""></a>
             </div>
@@ -37,7 +37,37 @@
                     <li class="nav__item"><a href="#project" class="nav__link nav-icon"><i
                                 class='bx bx-file bx-sm'></i></a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link nav-icon"><i
-                                class='bx bx-message bx-sm'></i></a></li>
+                                class='bx bx-message bx-sm'></i></a></li><br>
+                    <head>
+                        <meta charset="UTF-8" />
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <title>Document</title>
+                        <style>
+                        body {
+                            padding: 25px;
+                            background-color: white;
+                            color: black;
+                            /* font-size: 25px; */
+                        }
+                        .dark-mode {
+                            background-color: black;
+                            color: white;
+                        }
+                        </style>
+                    </head>
+                    <body>
+                        <div>
+                        <button onclick="darkMode()">Darkmode</button>
+                        </div>
+                        <script>
+                        function darkMode() {
+                            var element = document.body;
+                            element.classList.toggle("dark-mode");
+                        }
+                        </script>
+                    </body>
+                    </html>
                 </ul>
             </div>
 
@@ -207,13 +237,6 @@
         </section>
 
 
-
-
-
-
-
-
-
         <!--===== PROJECT (TODO:: Github Repo's with API and Flask)=====-->
         <section class="work section" id="project">
             <h2 class="section-title">Projects</h2>
@@ -221,7 +244,7 @@
             <div class="work__container bd-grid">
                 <!-- NEW START-->
                 <div class="work__img ">
-                    <a  target="_blank"><img
+                    <a target="_blank"><img
                             src="assets/img/work_4.png" alt=""></a>
                     <div class="overlay">
                         <div class="content">Leaf Disease Detection using Deep learning<br><span class="detail_work"
@@ -316,15 +339,10 @@
             <a href="https://www.instagram.com/__sne_h_a_l__/" target="_blank" class="footer__icon"><i
                     class='bx bxl-instagram'></i></a>
             <a href="https://github.com/snehal201" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
-            <!-- <a href="https://www.youtube.com/channel/UCpMnisdqsNAGzJfQBkBaOKg" target="_blank" class="footer__icon"><i class='bx bxl-youtube'></i></a> -->
-            
-            
-
         </div>
         <p>&#169; Thank you</p>
     </footer>
-    <!--===== DARK MODE =====-->
-
+    
     <!--===== LOADER =====-->
     <!-- TODO :: ADD LOADER FOR DYNAMIC WEBSITE-->
 

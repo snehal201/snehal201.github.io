@@ -117,8 +117,8 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(11, 119, 227, 0.15);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*===== NAV =====*/
@@ -634,6 +634,16 @@ img{
 
 @media screen and (min-width: 1024px){
   .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__img{
+    right: 10%;
+  }
+
+  .bd-grid-heder{
+    width: 1024px;
+    height: 47px;
     margin-left: auto;
     margin-right: auto;
   }
