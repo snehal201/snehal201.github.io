@@ -368,10 +368,12 @@ model-viewer {
   font-size: var(--deatil-font-size);
 }
 .skills__img{
+  height: 370px;
+  width: 370px;
   border-radius: .2rem;
-  padding-left: 15%;
-  padding-top: 15%;
-  scroll-padding-top: 10%;
+  padding-left: 3%;
+  padding-top: 20%;
+  scroll-padding-top: 13%;
 }
 
 /* ===== PROJECTS =====*/
