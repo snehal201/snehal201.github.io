@@ -260,6 +260,57 @@ img{
         }
     }
 }
+.language__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.language__content {
+    flex: 1;
+}
+
+.language__data {
+    margin-bottom: 1.5rem;
+}
+
+.language__name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.language__bar {
+    background-color: #f0f0f0;
+    border-radius: 0.25rem;
+    height: 12px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0.3rem;
+}
+
+.language__percentage {
+    height: 100%;
+    border-radius: 0.25rem;
+}
+
+.language__english {
+    width: 90%;
+    background-color: #4CAF50;
+}
+
+.language__german {
+    width: 35%;
+    background-color: #FFC107;
+}
+
+.language__level {
+    font-size: 0.85rem;
+    color: #555;
+}
 
 /* ===== SKILLS =====*/
 .skills{
