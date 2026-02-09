@@ -7,7 +7,7 @@
 }
 
 
-/* 
+/*
 
 :not(:defined) > * {
   display: none;
@@ -191,7 +191,7 @@ img{
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
-  
+
 }
 
 /*=== Show menu ===*/
@@ -405,7 +405,7 @@ model-viewer {
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
   border-radius: .6rem;
   overflow: hidden;
-  
+
 }
 .work__img img{
   transition: 1s;
@@ -424,7 +424,7 @@ model-viewer {
   display: flex;
   align-items: center;
   font-size: var(--deatil-font-size);
-  
+
 }
 .work__img img:hover {
   transform: scale(1.2);
@@ -653,7 +653,7 @@ model-viewer {
   background: rgb(149, 18, 18);
   box-sizing: border-box;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 .img-slider{
   position: relative;
@@ -749,5 +749,248 @@ model-viewer {
     bottom: 10px;
   }
 }
-      
+     /*===== SIMULATOR STYLES =====*/
+.simulator__card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+}
+
+.sim__controls {
+  margin-top: 1.5rem;
+}
+
+.sim__group {
+  margin-bottom: 1.25rem;
+}
+
+.sim__group label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--font-semi);
+  margin-bottom: .5rem;
+  color: var(--first-color);
+}
+
+.sim__group input[type=range] {
+  width: 100%;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  outline: none;
+  accent-color: var(--first-color);
+}
+
+.sim__results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.sim__stat {
+  background-color: #f9faff;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1px solid #eef2ff;
+}
+
+/* Simulator Styling */
+.simulator-container {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.simulator-title {
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.sim-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.control-group label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: var(--font-semi);
+}
+
+.sim-slider {
+    width: 100%;
+    accent-color: var(--first-color);
+}
+
+.sim-graph {
+    height: 180px;
+    margin-bottom: 1rem;
+}
+
+.sim-stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f9faff;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.stat-item h4 {
+    color: var(--first-color);
+    margin: 0;
+}
+
+
+/*===== SIMULATOR STYLING =====*/
+.sim-card {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 450px; /* Prevents overlapping text on desktop */
+  z-index: 10;
+}
+
+.sim-card-title {
+  font-size: 1.1rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sim-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.sim-control-group label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: var(--font-semi);
+}
+
+.sim-control-group input[type="range"] {
+  width: 100%;
+  accent-color: var(--first-color);
+}
+
+.sim-chart-container {
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.sim-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  background: #f9faff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.sim-stat {
+  font-size: 0.9rem;
+  font-weight: var(--font-semi);
+}
+
+.sim-stat span {
+  display: block;
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+/* Fix mobile overlapping */
+@media screen and (max-width: 767px) {
+  .home__img {
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .sim-card {
+    max-width: 100%;
+  }
+}
+
+/*===== GAME SECTION =====*/
+.game__container {
+    justify-content: center;
+}
+
+.game__card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto; /* Center the card */
+}
+
+.house__icon {
+    font-size: 4rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.house__features {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    color: var(--second-color);
+}
+
+.house__features i {
+    color: var(--first-color);
+    margin-right: 0.25rem;
+}
+
+.game__interaction input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #f0f0f0;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--body-font);
+    text-align: center;
+}
+
+.game__result {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+    animation: fadeIn 0.5s;
+}
+
+.highlight {
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.button-small {
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    background-color: var(--second-color);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
