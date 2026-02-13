@@ -240,6 +240,7 @@ img{
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
+  justify-self: center;
 }
 .button:hover{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
@@ -370,6 +371,7 @@ img{
   display: inline-block;
   height: 4rem;
   width: 4rem;
+  justify-self: center;
   text-align: center;
   border-radius: 50%;
   box-sizing: border-box;
@@ -437,6 +439,8 @@ img{
   }
   .section-title{
     margin-bottom: var(--mb-6);
+    align-items: center;
+
   }
   .section-title::after{
     width: 80px;
@@ -559,4 +563,22 @@ img{
     .dashboard__container {
         height: 500px; /* Slightly smaller on mobile */
     }
+}
+
+/* Update your existing .wrapper class or add this */
+.wrapper {
+  display: flex;
+  justify-content: center; /* This centers the items horizontally */
+  align-items: center;     /* This centers the items vertically */
+  flex-wrap: wrap;         /* Allows buttons to stack on small screens */
+  gap: 1rem;               /* Adds space between the buttons */
+  width: 100%;
+}
+
+/* Ensure the contact container also centers its content */
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
