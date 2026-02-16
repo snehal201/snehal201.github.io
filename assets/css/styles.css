@@ -123,7 +123,7 @@ img{
     right: -100%;
     width: 20%;
     height: 100%;
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--second-color);
     transition: .5s;
   }
@@ -183,7 +183,7 @@ img{
 .home__data{
     text-align: left;
     align-self: left;
-    margin-top: 2rem;
+    margin-top: 7rem;
 }
 .home__title{
   font-size: var(--big-font-size);
