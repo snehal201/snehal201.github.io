@@ -757,3 +757,86 @@ img{
   align-items: center;
   width: 100%;
 }
+/* ===== ADD THESE STYLES TO YOUR EXISTING CSS ===== */
+
+/* Language Selector */
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 2rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--second-color);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  color: var(--first-color);
+}
+
+.lang-btn.active {
+  color: var(--first-color);
+  border-bottom: 2px solid var(--first-color);
+}
+
+.lang-sep {
+  color: #ccc;
+  margin: 0 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .language-selector {
+    display: none;
+  }
+}
+
+/* Home Section Improvements */
+.home__subtitle {
+  font-size: 1.3rem;
+  color: var(--second-color);
+  font-weight: 600;
+  margin-bottom: var(--mb-2);
+}
+
+.home__description {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: var(--mb-3);
+  line-height: 1.6;
+}
+
+.home__languages {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: var(--mb-4);
+  flex-wrap: wrap;
+}
+
+.lang-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #00bcd4, #00acc1);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Experience Section */
+.experiance__data {
+  flex-wrap: wrap;
+}
+
+.experiance__date {
+  color: var(--first-color);
+  font-weight: 600;
+  white-space: nowrap;
+}
