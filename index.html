@@ -431,10 +431,10 @@
       var words = [], wordIdx = 0, charIdx = 0, deleting = false, timer = null;
 
       // SPEEDS — increase these numbers to slow the animation down
-      var TYPE_SPEED   = 110;   // ms per character while typing
-      var ERASE_SPEED  = 55;    // ms per character while deleting
-      var HOLD_FULL    = 2200;  // pause once a word is fully typed
-      var HOLD_EMPTY   = 500;   // pause before the next word starts
+      var TYPE_SPEED   = 60;   // ms per character while typing
+      var ERASE_SPEED  = 30;    // ms per character while deleting
+      var HOLD_FULL    = 1100;  // pause once a word is fully typed
+      var HOLD_EMPTY   = 200;   // pause before the next word starts
 
       function decode(s) { var d = document.createElement("textarea"); d.innerHTML = s; return d.value; }
 

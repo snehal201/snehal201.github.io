@@ -195,6 +195,7 @@ button{ font-family: inherit; }
   font-size: var(--typed-font-size);
   font-weight: 600;
   letter-spacing: -.01em;
+  timeout: 0.5s;
 }
 .cursor{
   font-size: var(--typed-font-size);
