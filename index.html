@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Snehal Tandel - Data Scientist Portfolio">
+    <meta name="description" content="Snehalkumar Tandel - Data Science & Machine Learning Engineer">
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -14,14 +14,14 @@
 
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 
-    <title>Snehal Tandel : Data Science & ML Engineer</title>
+    <title>Snehalkumar Tandel — Data Science & ML Engineer</title>
 </head>
 
 <body>
     <header class="l-header">
         <nav class="nav bd-grid-heder">
             <div>
-                <a href="#" class="nav__logo">Snehal Tandel</a>
+                <a href="#" class="nav__logo">Snehalkumar Tandel</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -35,11 +35,11 @@
                 </ul>
             </div>
 
-            <!-- Language Selector -->
+            <!-- LANGUAGE SELECTOR (note: class is lang-on, NOT active) -->
             <div class="language-selector">
-                <button class="lang-btn active" data-lang="en">EN</button>
+                <button type="button" class="lang-btn lang-on" data-lang="en">EN</button>
                 <span class="lang-sep">|</span>
-                <button class="lang-btn" data-lang="de">DE</button>
+                <button type="button" class="lang-btn" data-lang="de">DE</button>
             </div>
 
             <div class="nav__toggle" id="nav-toggle">
@@ -51,162 +51,182 @@
     <main class="l-main">
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi, I'm <span class="home__title-color">Snehal Tandel</span></h1>
-                <p class="home__subtitle">Data Science & Machine Learning Engineer</p>
-                <p class="home__description">Building intelligent data-driven solutions | ML Model Development | Data Analytics & Visualization</p>
+                <h1 class="home__title">
+                    <span data-i18n="hi">Hi,</span><br>
+                    <span data-i18n="im">I'm</span> <span class="home__title-color">Snehalkumar Tandel</span><br>
+                    <span class="typed-text" id="typed-text"></span><span class="cursor typing" id="typed-cursor">&nbsp;</span>
+                </h1>
+
                 <div class="home__languages">
-                    <span class="lang-badge">🌍 English - Fluent</span>
-                    <span class="lang-badge">🌍 German - B1</span>
+                    <span class="lang-badge"><i class='bx bx-world'></i> <span data-i18n="langEn">English — Fluent</span></span>
+                    <span class="lang-badge"><i class='bx bx-world'></i> <span data-i18n="langDe">German — B1</span></span>
                 </div>
             </div>
 
             <div class="home__social">
-                <a href="https://www.linkedin.com/in/snehal-tandel-989a54205/" target="_blank"
+                <a href="https://www.linkedin.com/in/snehal-tandel-989a54205/" target="_blank" rel="noopener"
                     class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/snehal201" target="_blank" class="home__social-icon"><i
+                <a href="https://github.com/snehal201" target="_blank" rel="noopener" class="home__social-icon"><i
                         class='bx bxl-github'></i></a>
             </div>
         </section>
 
 
         <section class="skills section" id="skills">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title" data-i18n="skillsTitle">Technical Skills</h2>
 
             <div class="skills__container bd-grid">
                 <div>
-                    <h2 class="skills__subtitle">Professional Expertise</h2>
-                    <p class="skills__text">
-                        I specialize in building end-to-end Data Science solutions, from data extraction and exploratory analysis to model deployment and visualization.
+                    <h2 class="skills__subtitle" data-i18n="skillsSub">Professional Expertise</h2>
+                    <p class="skills__text" data-i18n="skillsText">
+                        I build end-to-end data science solutions — from data extraction and exploratory analysis through model training, deployment and interactive visualisation.
                     </p>
 
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bx-code-alt skills__icon' style="color: #00bcd4;"></i>
+                            <i class='bx bx-code-alt skills__icon'></i>
                             <span class="skills__name">
-                                Programming & Databases <br>
-                                <span style="font-size: 0.8rem; color: var(--second-color); font-weight: normal;">
-                                    Python, SQL, MySQL, MongoDB, PostgreSQL, BeautifulSoup (Scraping)
-                                </span>
+                                <span data-i18n="sk1">Programming &amp; Databases</span>
+                                <span class="skills__detail">Python, SQL, MySQL, PostgreSQL, MongoDB, BeautifulSoup, Scrapy</span>
                             </span>
                         </div>
                     </div>
 
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bxl-python skills__icon' style="color: #00bcd4;"></i>
+                            <i class='bx bxl-python skills__icon'></i>
                             <span class="skills__name">
-                                Data Science & ML <br>
-                                <span style="font-size: 0.8rem; color: var(--second-color); font-weight: normal;">
-                                    Pandas, NumPy, Scikit-learn, XGBoost, TensorFlow, Time Series, Power BI, Matplotlib
-                                </span>
+                                <span data-i18n="sk2">Data Science &amp; Machine Learning</span>
+                                <span class="skills__detail">Pandas, NumPy, Scikit-learn, XGBoost, TensorFlow, Keras, LSTM, Prophet, Time Series</span>
                             </span>
                         </div>
                     </div>
 
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bx-cloud-upload skills__icon' style="color: #00bcd4;"></i>
+                            <i class='bx bx-bar-chart-alt-2 skills__icon'></i>
                             <span class="skills__name">
-                                Web & Cloud Engineering <br>
-                                <span style="font-size: 0.8rem; color: var(--second-color); font-weight: normal;">
-                                    AWS, Azure, Git/GitHub, Apache Airflow, Streamlit, Flask, Docker
-                                </span>
+                                <span data-i18n="sk3">Visualisation &amp; BI</span>
+                                <span class="skills__detail">Power BI, Streamlit, Matplotlib, Seaborn, Plotly, Dashboard Design</span>
                             </span>
                         </div>
                     </div>
 
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bx-brain skills__icon' style="color: #00bcd4;"></i>
+                            <i class='bx bx-cloud-upload skills__icon'></i>
                             <span class="skills__name">
-                                NLP & GenAI <br>
-                                <span style="font-size: 0.8rem; color: var(--second-color); font-weight: normal;">
-                                    LLMs, Transformers, BERT, SpaCy, NLTK, Sentiment Analysis
-                                </span>
+                                <span data-i18n="sk4">Cloud &amp; Data Engineering</span>
+                                <span class="skills__detail">AWS, Azure, Docker, Apache Airflow, Git/GitHub, Flask, CI/CD</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-brain skills__icon'></i>
+                            <span class="skills__name">
+                                <span data-i18n="sk5">NLP &amp; Generative AI</span>
+                                <span class="skills__detail">LLMs, Transformers, BERT, SpaCy, NLTK, Sentiment Analysis</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-scan skills__icon'></i>
+                            <span class="skills__name">
+                                <span data-i18n="sk6">Computer Vision</span>
+                                <span class="skills__detail">OpenCV, YOLO, CNNs, Object Detection, Image Classification</span>
                             </span>
                         </div>
                     </div>
                 </div>
 
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <img src="assets/img/skills.jpeg" alt="Technical Skills" class="skills__img" style="border-radius: 1rem; box-shadow: 0 4px 25px rgba(0,0,0,0.1);">
+                <div class="skills__imgbox">
+                    <img src="assets/img/skills.jpeg" alt="Technical Skills" class="skills__img">
                 </div>
             </div>
         </section>
 
+        <!-- ===== EXPERIENCE (Google XYZ format) ===== -->
         <section class="experience section" id="Experience">
-            <h2 class="section-title">Experience</h2>
-            <div class="experiance__container bd-grid">
-                <div class="experiance__data">
-                    <div class="experiance__names">
-                        <span class="about__text"><b>Associate Data Scientist</b><br>Blue Data Consulting Pvt Ltd</span>
+            <h2 class="section-title" data-i18n="expTitle">Experience</h2>
+
+            <div class="exp__container bd-grid">
+
+                <article class="exp__item">
+                    <div class="exp__marker"></div>
+                    <div class="exp__body">
+                        <div class="exp__head">
+                            <div>
+                                <h3 class="exp__role" data-i18n="exp1Role">Associate Data Scientist</h3>
+                                <p class="exp__company">Blue Data Consulting Pvt Ltd</p>
+                            </div>
+                            <span class="exp__date">03/2022 — 10/2024</span>
+                        </div>
+                        <ul class="exp__points">
+                            <li data-i18n="exp1p1">Improved classification model accuracy to <strong>98%</strong> by re-engineering the feature pipeline and tuning gradient-boosted ensembles (XGBoost, Random Forest) across five production models.</li>
+                            <li data-i18n="exp1p2">Cut manual reporting effort by <strong>~70%</strong> for business stakeholders by designing and shipping interactive Streamlit dashboards backed by live SQL queries.</li>
+                            <li data-i18n="exp1p3">Reduced data preparation time from days to <strong>under 2 hours</strong> by automating ingestion, cleaning and validation with Apache Airflow DAGs.</li>
+                            <li data-i18n="exp1p4">Delivered <strong>6+ end-to-end ML projects</strong> from requirement gathering to deployment by partnering with business, engineering and QA teams.</li>
+                        </ul>
                     </div>
-                    <div class="experiance__date">03/2022 to 10/2024</div>
-                    <div style="width: 100%; margin-top: 0.5rem; font-size: 0.9rem; color: #555; text-align: left;">
-                        • Developed ML models achieving 92-98% accuracy<br>
-                        • Built interactive Streamlit dashboards for real-time analytics<br>
-                        • Conducted end-to-end data pipelines and feature engineering
+                </article>
+
+                <article class="exp__item">
+                    <div class="exp__marker"></div>
+                    <div class="exp__body">
+                        <div class="exp__head">
+                            <div>
+                                <h3 class="exp__role" data-i18n="exp2Role">Data Science Intern</h3>
+                                <p class="exp__company">Blue Data Consulting Pvt Ltd</p>
+                            </div>
+                            <span class="exp__date">11/2021 — 02/2022</span>
+                        </div>
+                        <ul class="exp__points">
+                            <li data-i18n="exp2p1">Shortened weekly analysis turnaround by <strong>40%</strong> by building reusable Python and Power BI reporting templates for the analytics team.</li>
+                            <li data-i18n="exp2p2">Raised baseline model performance by <strong>12%</strong> by running structured EDA, outlier treatment and cross-validated hyper-parameter searches.</li>
+                            <li data-i18n="exp2p3">Supported production readiness of two ML models by writing evaluation notebooks and documenting model assumptions and limitations.</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="experiance__data">
-                    <div class="experiance__names">
-                        <span class="about__text"><b>Data Science Intern</b><br>Blue Data Consulting Pvt Ltd</span>
-                    </div>
-                    <div class="experiance__date">11/2021 to 02/2022</div>
-                    <div style="width: 100%; margin-top: 0.5rem; font-size: 0.9rem; color: #555; text-align: left;">
-                        • Data analysis and visualization using Python & Power BI<br>
-                        • Assisted in ML model development and optimization
-                    </div>
-                </div>
+                </article>
+
             </div>
         </section>
 
         <section class="dashboard section" id="project_dashboards">
-            <h2 class="section-title">Project Dashboards</h2>
+            <h2 class="section-title" data-i18n="dashTitle">Project Dashboards</h2>
 
-            <div class="bd-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+            <div class="bd-grid dash__grid">
 
-                <div style="background: #0E2431; padding: 2rem; border-radius: 1rem; color: white; display: flex; flex-direction: column; align-items: center; text-align: center; height: 100%;">
-                    <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 0.5rem; margin-bottom: 1.5rem;">
-                        <img src="assets/img/ObesityDashbord.png" alt="Obesity Prediction" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="dash__card">
+                    <div class="dash__imgbox">
+                        <img src="assets/img/ObesityDashbord.png" alt="Obesity Prediction">
                     </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Obesity Risk Prediction</h3>
-                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem; min-height: 3rem; display: flex; align-items: center;">
-                        The interactive dashboard analyzing factors influencing obesity. Use the sidebar to filter the dataset and explore patterns related to physical activity, eating habits, technology use, and more.
-                    </p>
-                    <div style="display: flex; gap: 10px; margin-bottom: 1.5rem;">
-                        <span style="background: #00bcd4; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem;">Machine Learning</span>
-                        <span style="background: #00bcd4; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem;">AI</span>
+                    <h3 class="dash__title" data-i18n="p1t">Obesity Risk Prediction</h3>
+                    <p class="dash__desc" data-i18n="p1d">Interactive dashboard analysing the lifestyle factors that drive obesity risk. Filter the dataset from the sidebar to explore patterns in physical activity, eating habits and technology use.</p>
+                    <div class="dash__tags">
+                        <span>Machine Learning</span><span>Streamlit</span>
                     </div>
-                    <div style="margin-top: auto; display: flex; gap: 15px;">
-                        <a href="https://github.com/snehal201/obesity-dashboard" target="_blank" class="button" style="background: transparent; border: 1px solid white; padding: 0.5rem 1.5rem;">
-                            <i class='bx bxl-github'></i> Code
-                        </a>
-                        <a href="https://obesity-dashboard-elvkkyaqcolypaxbbhzucy.streamlit.app/" target="_blank" class="button" style="padding: 0.5rem 1.5rem;">
-                            Live Demo
-                        </a>
+                    <div class="dash__links">
+                        <a href="https://github.com/snehal201/obesity-dashboard" target="_blank" rel="noopener" class="button button--ghost"><i class='bx bxl-github'></i> Code</a>
+                        <a href="https://obesity-dashboard-elvkkyaqcolypaxbbhzucy.streamlit.app/" target="_blank" rel="noopener" class="button" data-i18n="live">Live Demo</a>
                     </div>
                 </div>
 
-                <div style="background: #0E2431; padding: 2rem; border-radius: 1rem; color: white; display: flex; flex-direction: column; align-items: center; text-align: center; height: 100%;">
-                    <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 0.5rem; margin-bottom: 1.5rem;">
-                        <img src="assets/img/RentPredictor.png" alt="House Price Prediction" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="dash__card">
+                    <div class="dash__imgbox">
+                        <img src="assets/img/RentPredictor.png" alt="House Price Prediction">
                     </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Germany House Prices</h3>
-                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem; min-height: 3rem; display: flex; align-items: center;">
-                        Interactive platform to estimate real estate prices and rental values across German states.
-                    </p>
-                    <div style="display: flex; gap: 10px; margin-bottom: 1.5rem;">
-                        <span style="background: #00bcd4; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem;">Regression</span>
-                        <span style="background: #00bcd4; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem;">Python</span>
+                    <h3 class="dash__title" data-i18n="p2t">Germany House Prices</h3>
+                    <p class="dash__desc" data-i18n="p2d">Regression app that estimates property sale and rental values across German states from living space, rooms, heating type and build year.</p>
+                    <div class="dash__tags">
+                        <span>Regression</span><span>Python</span>
                     </div>
-                    <div style="margin-top: auto; display: flex; gap: 15px;">
-                        <a href="https://github.com/snehal201/Germany_Hause_Price_Prediction_App" target="_blank" class="button" style="background: transparent; border: 1px solid white; padding: 0.5rem 1.5rem;">
-                            <i class='bx bxl-github'></i> Code
-                        </a>
-                        <a href="https://germanyhausepricepredictionapp-bhzgujg3xpzarwj2s9gzky.streamlit.app/" target="_blank" class="button" style="padding: 0.5rem 1.5rem;">
-                            Live Demo
-                        </a>
+                    <div class="dash__links">
+                        <a href="https://github.com/snehal201/Germany_Hause_Price_Prediction_App" target="_blank" rel="noopener" class="button button--ghost"><i class='bx bxl-github'></i> Code</a>
+                        <a href="https://germanyhausepricepredictionapp-bhzgujg3xpzarwj2s9gzky.streamlit.app/" target="_blank" rel="noopener" class="button" data-i18n="live">Live Demo</a>
                     </div>
                 </div>
 
@@ -214,67 +234,80 @@
         </section>
 
         <section class="work section" id="project">
-            <h2 class="section-title">Other Projects</h2>
+            <h2 class="section-title" data-i18n="workTitle">Other Projects</h2>
             <div class="work__container bd-grid">
 
                 <div class="work__card">
                     <img src="assets/img/work_4.png" alt="Leaf Disease" class="work__img">
                     <div class="work__content">
-                        <h3 class="work__title">Leaf Disease Detection</h3>
-                        <span class="work__subtitle">Deep Learning • 98% Accuracy</span>
-                        <a href="https://github.com/snehal201/Potato-Plant-leaf-Disease-Prediction" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
+                        <h3 class="work__title" data-i18n="w1t">Leaf Disease Detection</h3>
+                        <span class="work__subtitle">CNN · Deep Learning · 98% Accuracy</span>
+                        <a href="https://github.com/snehal201/Potato-Plant-leaf-Disease-Prediction" target="_blank" rel="noopener" class="work__button" data-i18n="viewCode">View Code <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
 
                 <div class="work__card">
                     <img src="assets/img/ResumeSccaning.png" alt="Resume Screening" class="work__img">
                     <div class="work__content">
-                        <h3 class="work__title">Resume Screening AI</h3>
-                        <span class="work__subtitle">NLP • Random Forest</span>
-                        <a href="https://github.com/snehal201/Resume-Screening-Using-Machine-Learning" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
+                        <h3 class="work__title" data-i18n="w2t">Resume Screening AI</h3>
+                        <span class="work__subtitle">NLP · Random Forest · TF-IDF</span>
+                        <a href="https://github.com/snehal201/Resume-Screening-Using-Machine-Learning" target="_blank" rel="noopener" class="work__button" data-i18n="viewCode">View Code <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
 
                 <div class="work__card">
-                    <img src="assets/img/work_1.jpeg" alt="British Airways" class="work__img">
+                    <img src="assets/img/work_1.jpeg" alt="Stock Price Prediction" class="work__img">
                     <div class="work__content">
-                        <h3 class="work__title">Passenger Satisfaction</h3>
-                        <span class="work__subtitle">XGBoost • 92% Accuracy</span>
-                        <a href="https://github.com/snehal201" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
+                        <h3 class="work__title" data-i18n="w3t">Google Stock Price Forecasting</h3>
+                        <span class="work__subtitle">LSTM · Prophet · Time Series</span>
+                        <a href="https://github.com/snehal201/Google-Stock-Price-Prediction" target="_blank" rel="noopener" class="work__button" data-i18n="viewCode">View Code <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
 
                 <div class="work__card">
                     <img src="assets/img/work_5.jpg" alt="EV Charging" class="work__img">
                     <div class="work__content">
-                        <h3 class="work__title">EV Charging in Germany</h3>
-                        <span class="work__subtitle">Data Analysis • Visualization</span>
-                        <a href="https://github.com/snehal201/Electric-Vehicle-Charging-in-Germany" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
+                        <h3 class="work__title" data-i18n="w4t">EV Charging in Germany</h3>
+                        <span class="work__subtitle">Data Pipeline · Analysis · Visualisation</span>
+                        <a href="https://github.com/snehal201/Electric-Vehicle-Charging-in-Germany" target="_blank" rel="noopener" class="work__button" data-i18n="viewCode">View Code <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
 
                 <div class="work__card">
                     <img src="assets/img/work_3.jpg" alt="Object Tracking" class="work__img">
                     <div class="work__content">
-                        <h3 class="work__title">Object Tracking</h3>
-                        <span class="work__subtitle">YOLO • Computer Vision</span>
-                        <a href="https://github.com/snehal201/object_tracking" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
+                        <h3 class="work__title" data-i18n="w5t">Object Detection &amp; Tracking</h3>
+                        <span class="work__subtitle">YOLO · OpenCV · Computer Vision</span>
+                        <a href="https://github.com/snehal201/Object-Detection-and-Tracking" target="_blank" rel="noopener" class="work__button" data-i18n="viewCode">View Code <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <img src="assets/img/work_5.jpg" alt="Airflow Pipeline" class="work__img">
+                    <div class="work__content">
+                        <h3 class="work__title" data-i18n="w6t">Airflow Data Pipeline</h3>
+                        <span class="work__subtitle">Apache Airflow · ETL · Automation</span>
+                        <a href="https://github.com/snehal201/Airflow_HousePrice_Prediction_Germany" target="_blank" rel="noopener" class="work__button" data-i18n="viewCode">View Code <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="contact section" id="contact">
-            <h2 class="section-title">Contact & Follow</h2>
-            <div class="contact__container bd-grid" style="display: flex; justify-content: center;">
+            <h2 class="section-title" data-i18n="contactTitle">Contact &amp; Follow</h2>
+            <div class="contact__container bd-grid">
                 <div class="wrapper">
                     <div class="buttons">
                         <div class="icons"><a href="mailto:snehaltandel200@gmail.com"><i class="fab fa-google"></i></a></div>
-                        <span>Mail</span>
+                        <span data-i18n="mail">Mail</span>
                     </div>
                     <div class="buttons">
-                        <div class="icons"><a href="https://www.linkedin.com/in/snehal-tandel-989a54205/" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                        <div class="icons"><a href="https://www.linkedin.com/in/snehal-tandel-989a54205/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div>
                         <span>LinkedIn</span>
+                    </div>
+                    <div class="buttons">
+                        <div class="icons"><a href="https://github.com/snehal201" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></div>
+                        <span>GitHub</span>
                     </div>
                 </div>
             </div>
@@ -283,26 +316,190 @@
 
     <footer class="footer">
         <p class="footer__title">Snehalkumar Tandel</p>
+        <p class="footer__subtitle" data-i18n="footerSub">Data Science &amp; Machine Learning Engineer</p>
         <div class="footer__social">
             <a href="mailto:snehaltandel200@gmail.com" class="footer__icon"><i class='bx bxl-google'></i></a>
-            <a href="https://www.linkedin.com/in/snehal-tandel-989a54205/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/snehal201" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/snehal-tandel-989a54205/" target="_blank" rel="noopener" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/snehal201" target="_blank" rel="noopener" class="footer__icon"><i class='bx bxl-github'></i></a>
         </div>
-        <p>Thank you for visiting</p>
+        <p data-i18n="thanks">Thank you for visiting</p>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/typer.js"></script>
+
+    <!-- ============ TYPING + LANGUAGE (self-contained) ============ -->
     <script>
-        // Simple language selector
-        document.querySelectorAll('.lang-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-            });
+    (function () {
+      "use strict";
+
+      /* ---------- 1. TRANSLATIONS ---------- */
+      var I18N = {
+        en: {
+          hi: "Hi,", im: "I'm",
+          typed: ["Data Scientist", "Machine Learning Engineer", "Data Analyst", "NLP &amp; GenAI Developer"],
+          langEn: "English — Fluent", langDe: "German — B1",
+          skillsTitle: "Technical Skills",
+          skillsSub: "Professional Expertise",
+          skillsText: "I build end-to-end data science solutions — from data extraction and exploratory analysis through model training, deployment and interactive visualisation.",
+          sk1: "Programming &amp; Databases",
+          sk2: "Data Science &amp; Machine Learning",
+          sk3: "Visualisation &amp; BI",
+          sk4: "Cloud &amp; Data Engineering",
+          sk5: "NLP &amp; Generative AI",
+          sk6: "Computer Vision",
+          expTitle: "Experience",
+          exp1Role: "Associate Data Scientist",
+          exp1p1: "Improved classification model accuracy to <strong>98%</strong> by re-engineering the feature pipeline and tuning gradient-boosted ensembles (XGBoost, Random Forest) across five production models.",
+          exp1p2: "Cut manual reporting effort by <strong>~70%</strong> for business stakeholders by designing and shipping interactive Streamlit dashboards backed by live SQL queries.",
+          exp1p3: "Reduced data preparation time from days to <strong>under 2 hours</strong> by automating ingestion, cleaning and validation with Apache Airflow DAGs.",
+          exp1p4: "Delivered <strong>6+ end-to-end ML projects</strong> from requirement gathering to deployment by partnering with business, engineering and QA teams.",
+          exp2Role: "Data Science Intern",
+          exp2p1: "Shortened weekly analysis turnaround by <strong>40%</strong> by building reusable Python and Power BI reporting templates for the analytics team.",
+          exp2p2: "Raised baseline model performance by <strong>12%</strong> by running structured EDA, outlier treatment and cross-validated hyper-parameter searches.",
+          exp2p3: "Supported production readiness of two ML models by writing evaluation notebooks and documenting model assumptions and limitations.",
+          dashTitle: "Project Dashboards",
+          p1t: "Obesity Risk Prediction",
+          p1d: "Interactive dashboard analysing the lifestyle factors that drive obesity risk. Filter the dataset from the sidebar to explore patterns in physical activity, eating habits and technology use.",
+          p2t: "Germany House Prices",
+          p2d: "Regression app that estimates property sale and rental values across German states from living space, rooms, heating type and build year.",
+          live: "Live Demo",
+          workTitle: "Other Projects",
+          w1t: "Leaf Disease Detection",
+          w2t: "Resume Screening AI",
+          w3t: "Google Stock Price Forecasting",
+          w4t: "EV Charging in Germany",
+          w5t: "Object Detection &amp; Tracking",
+          w6t: "Airflow Data Pipeline",
+          viewCode: "View Code <i class='bx bx-right-arrow-alt'></i>",
+          contactTitle: "Contact &amp; Follow",
+          mail: "Mail",
+          footerSub: "Data Science &amp; Machine Learning Engineer",
+          thanks: "Thank you for visiting"
+        },
+        de: {
+          hi: "Hallo,", im: "ich bin",
+          typed: ["Data Scientist", "Machine Learning Engineer", "Datenanalyst", "NLP- &amp; GenAI-Entwickler"],
+          langEn: "Englisch — Fließend", langDe: "Deutsch — B1",
+          skillsTitle: "Technische Kenntnisse",
+          skillsSub: "Fachliche Expertise",
+          skillsText: "Ich entwickle durchgängige Data-Science-Lösungen — von der Datenextraktion und explorativen Analyse über das Modelltraining bis hin zu Deployment und interaktiver Visualisierung.",
+          sk1: "Programmierung &amp; Datenbanken",
+          sk2: "Data Science &amp; Maschinelles Lernen",
+          sk3: "Visualisierung &amp; BI",
+          sk4: "Cloud &amp; Data Engineering",
+          sk5: "NLP &amp; Generative KI",
+          sk6: "Computer Vision",
+          expTitle: "Berufserfahrung",
+          exp1Role: "Associate Data Scientist",
+          exp1p1: "Klassifikationsgenauigkeit auf <strong>98%</strong> gesteigert durch Neugestaltung der Feature-Pipeline und Tuning von Gradient-Boosting-Modellen (XGBoost, Random Forest) in fünf Produktivmodellen.",
+          exp1p2: "Manuellen Reporting-Aufwand um <strong>ca. 70%</strong> reduziert durch Konzeption und Bereitstellung interaktiver Streamlit-Dashboards auf Basis von Live-SQL-Abfragen.",
+          exp1p3: "Datenaufbereitungszeit von Tagen auf <strong>unter 2 Stunden</strong> verkürzt durch Automatisierung von Ingestion, Bereinigung und Validierung mit Apache-Airflow-DAGs.",
+          exp1p4: "<strong>6+ End-to-End-ML-Projekte</strong> von der Anforderungsaufnahme bis zum Deployment umgesetzt in Zusammenarbeit mit Fachbereich, Engineering und QA.",
+          exp2Role: "Praktikant Data Science",
+          exp2p1: "Wöchentliche Analysedauer um <strong>40%</strong> verkürzt durch wiederverwendbare Python- und Power-BI-Reporting-Vorlagen für das Analytics-Team.",
+          exp2p2: "Basismodell-Performance um <strong>12%</strong> verbessert durch strukturierte EDA, Ausreißerbehandlung und kreuzvalidierte Hyperparameter-Suche.",
+          exp2p3: "Produktionsreife von zwei ML-Modellen unterstützt durch Evaluations-Notebooks sowie Dokumentation von Modellannahmen und -grenzen.",
+          dashTitle: "Projekt-Dashboards",
+          p1t: "Adipositas-Risikovorhersage",
+          p1d: "Interaktives Dashboard zur Analyse der Lebensstilfaktoren, die das Adipositas-Risiko beeinflussen. Über die Seitenleiste lassen sich Muster in Bewegung, Ernährung und Technologienutzung untersuchen.",
+          p2t: "Immobilienpreise in Deutschland",
+          p2d: "Regressions-App zur Schätzung von Kauf- und Mietpreisen in deutschen Bundesländern anhand von Wohnfläche, Zimmerzahl, Heizungsart und Baujahr.",
+          live: "Live-Demo",
+          workTitle: "Weitere Projekte",
+          w1t: "Blattkrankheits-Erkennung",
+          w2t: "KI-Lebenslauf-Screening",
+          w3t: "Google-Aktienkurs-Prognose",
+          w4t: "E-Ladeinfrastruktur in Deutschland",
+          w5t: "Objekterkennung &amp; -verfolgung",
+          w6t: "Airflow-Datenpipeline",
+          viewCode: "Code ansehen <i class='bx bx-right-arrow-alt'></i>",
+          contactTitle: "Kontakt &amp; Folgen",
+          mail: "E-Mail",
+          footerSub: "Data Science &amp; Machine Learning Engineer",
+          thanks: "Danke für Ihren Besuch"
+        }
+      };
+
+      /* ---------- 2. TYPING EFFECT ---------- */
+      var elText   = document.getElementById("typed-text");
+      var elCursor = document.getElementById("typed-cursor");
+      var words = [], wordIdx = 0, charIdx = 0, deleting = false, timer = null;
+
+      // SPEEDS — increase these numbers to slow the animation down
+      var TYPE_SPEED   = 110;   // ms per character while typing
+      var ERASE_SPEED  = 55;    // ms per character while deleting
+      var HOLD_FULL    = 2200;  // pause once a word is fully typed
+      var HOLD_EMPTY   = 500;   // pause before the next word starts
+
+      function decode(s) { var d = document.createElement("textarea"); d.innerHTML = s; return d.value; }
+
+      function tick() {
+        var word = words[wordIdx] || "";
+        if (!deleting) {
+          charIdx++;
+          elText.textContent = word.slice(0, charIdx);
+          if (elCursor) elCursor.classList.add("typing");
+          if (charIdx === word.length) {
+            deleting = true;
+            if (elCursor) elCursor.classList.remove("typing");
+            timer = setTimeout(tick, HOLD_FULL);
+            return;
+          }
+          timer = setTimeout(tick, TYPE_SPEED);
+        } else {
+          charIdx--;
+          elText.textContent = word.slice(0, charIdx);
+          if (charIdx === 0) {
+            deleting = false;
+            wordIdx = (wordIdx + 1) % words.length;
+            timer = setTimeout(tick, HOLD_EMPTY);
+            return;
+          }
+          timer = setTimeout(tick, ERASE_SPEED);
+        }
+      }
+
+      function startTyping(list) {
+        clearTimeout(timer);
+        words = list.map(decode);
+        wordIdx = 0; charIdx = 0; deleting = false;
+        if (elText) elText.textContent = "";
+        tick();
+      }
+
+      /* ---------- 3. APPLY LANGUAGE ---------- */
+      function applyLanguage(lang) {
+        var dict = I18N[lang] || I18N.en;
+
+        document.querySelectorAll("[data-i18n]").forEach(function (node) {
+          var key = node.getAttribute("data-i18n");
+          if (dict[key] !== undefined) node.innerHTML = dict[key];
         });
+
+        document.documentElement.lang = lang;
+
+        document.querySelectorAll(".lang-btn").forEach(function (b) {
+          b.classList.toggle("lang-on", b.getAttribute("data-lang") === lang);
+        });
+
+        try { localStorage.setItem("siteLang", lang); } catch (e) {}
+
+        startTyping(dict.typed);
+      }
+
+      /* ---------- 4. WIRE UP ---------- */
+      document.querySelectorAll(".lang-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          applyLanguage(this.getAttribute("data-lang"));
+        });
+      });
+
+      var saved = "en";
+      try { saved = localStorage.getItem("siteLang") || "en"; } catch (e) {}
+      applyLanguage(saved);
+
+    })();
     </script>
 </body>
 </html>
