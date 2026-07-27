@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Snehal Tandel - Data Scientist Portfolio">
+    <meta name="description" content="Snehal Tandel - Data Scientist & ML Engineer Portfolio">
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -14,7 +14,7 @@
 
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 
-    <title>Snehal Tandel : Resume Website</title>
+    <title>Snehal Tandel - Data Science & ML Engineer</title>
 </head>
 
 <body>
@@ -35,6 +35,13 @@
                 </ul>
             </div>
 
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <span class="lang-separator">|</span>
+                <button class="lang-btn" data-lang="de">DE</button>
+            </div>
+
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
@@ -44,9 +51,17 @@
     <main class="l-main">
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Snehal Tandel<br></span>
-                    <span class="typed-text"></span><span class="cursor typing">&nbsp;</span>
-                </h1>
+                <h1 class="home__title">Hi, I'm <span class="home__title-color">Snehal Tandel</span></h1>
+                <p class="home__subtitle">Data Science & Machine Learning Engineer</p>
+                <p class="home__description">Building intelligent data-driven solutions | ML Model Development | Data Analytics & Visualization</p>
+                <div class="home__languages">
+                    <span class="lang-badge">
+                        <i class='bx bx-world'></i> English - Fluent
+                    </span>
+                    <span class="lang-badge">
+                        <i class='bx bx-world'></i> German - B1
+                    </span>
+                </div>
             </div>
 
             <div class="home__social">
@@ -59,13 +74,13 @@
 
 
         <section class="skills section" id="skills">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title">Technical Expertise</h2>
 
             <div class="skills__container bd-grid">
                 <div>
-                    <h2 class="skills__subtitle">Professional Expertise</h2>
+                    <h2 class="skills__subtitle">Professional Profile</h2>
                     <p class="skills__text">
-                        I specialize in building end-to-end Data Science solutions, from data extraction and exploratory analysis to model deployment and visualization.
+                        Specialized in designing and deploying end-to-end machine learning solutions with expertise spanning from advanced data engineering and exploratory analysis to model optimization, deployment, and interactive dashboard development. Passionate about transforming complex datasets into actionable insights.
                     </p>
 
                     <div class="skills__data">
@@ -74,7 +89,7 @@
                             <span class="skills__name">
                                 Programming & Databases <br>
                                 <span style="font-size: 0.8rem; color: var(--second-color); font-weight: normal;">
-                                    Python, SQL, MySQL, MongoDB, BeautifulSoup (Scraping)
+                                    Python, SQL, MySQL, MongoDB, PostgreSQL, Redis, BeautifulSoup, Scrapy
                                 </span>
                             </span>
                         </div>
@@ -84,9 +99,21 @@
                         <div class="skills__names">
                             <i class='bx bxl-python skills__icon' style="color: #00bcd4;"></i>
                             <span class="skills__name">
-                                Data Science & ML <br>
+                                Data Science & Machine Learning <br>
                                 <span style="font-size: 0.8rem; color: var(--second-color); font-weight: normal;">
-                                    Pandas, NumPy, Scikit-learn, Time Series, Power BI, Matplotlib
+                                    Pandas, NumPy, Scikit-learn, XGBoost, TensorFlow, Keras, Time Series Forecasting, Statistical Analysis
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-bar-chart skills__icon' style="color: #00bcd4;"></i>
+                            <span class="skills__name">
+                                Data Visualization & BI <br>
+                                <span style="font-size: 0.8rem; color: var(--second-color); font-weight: normal;">
+                                    Power BI, Matplotlib, Seaborn, Plotly, Streamlit, Tableau, Interactive Dashboard Development
                                 </span>
                             </span>
                         </div>
@@ -96,9 +123,9 @@
                         <div class="skills__names">
                             <i class='bx bx-cloud-upload skills__icon' style="color: #00bcd4;"></i>
                             <span class="skills__name">
-                                Web & Cloud Engineering <br>
+                                Cloud & DevOps <br>
                                 <span style="font-size: 0.8rem; color: var(--second-color); font-weight: normal;">
-                                    AWS, Azure, Git/GitHub, Apache Airflow, Streamlit, Flask
+                                    AWS (SageMaker, EC2, S3), Azure, Docker, Git/GitHub, CI/CD, Apache Airflow, Model Deployment
                                 </span>
                             </span>
                         </div>
@@ -108,9 +135,21 @@
                         <div class="skills__names">
                             <i class='bx bx-brain skills__icon' style="color: #00bcd4;"></i>
                             <span class="skills__name">
-                                NLP & GenAI <br>
+                                NLP & Advanced AI <br>
                                 <span style="font-size: 0.8rem; color: var(--second-color); font-weight: normal;">
-                                    LLMs, Transformers, BERT, SpaCy, NLTK, Sentiment Analysis
+                                    Large Language Models, Transformers, BERT, SpaCy, NLTK, Sentiment Analysis, Text Processing
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-image skills__icon' style="color: #00bcd4;"></i>
+                            <span class="skills__name">
+                                Computer Vision <br>
+                                <span style="font-size: 0.8rem; color: var(--second-color); font-weight: normal;">
+                                    OpenCV, YOLO, Deep Learning, Object Detection, Image Classification, Neural Networks
                                 </span>
                             </span>
                         </div>
@@ -124,25 +163,40 @@
         </section>
 
         <section class="experience section" id="Experience">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title">Professional Experience</h2>
             <div class="experiance__container bd-grid">
                 <div class="experiance__data">
                     <div class="experiance__names">
                         <span class="about__text"><b>Associate Data Scientist</b><br>Blue Data Consulting Pvt Ltd</span>
                     </div>
-                    <div class="experiance__date">03/2022 to 10/2024</div>
+                    <div class="experiance__date">03/2022 - 10/2024</div>
+                    <div class="experiance__description">
+                        <ul class="exp-list">
+                            <li>Developed and deployed machine learning models achieving 92-98% accuracy across classification and regression tasks</li>
+                            <li>Built interactive Streamlit dashboards for real-time data analysis and business intelligence</li>
+                            <li>Conducted end-to-end data pipeline development including ETL, feature engineering, and model optimization</li>
+                            <li>Collaborated with cross-functional teams to translate business requirements into data science solutions</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="experiance__data">
                     <div class="experiance__names">
                         <span class="about__text"><b>Data Science Intern</b><br>Blue Data Consulting Pvt Ltd</span>
                     </div>
-                    <div class="experiance__date">11/2021 to 02/2022</div>
+                    <div class="experiance__date">11/2021 - 02/2022</div>
+                    <div class="experiance__description">
+                        <ul class="exp-list">
+                            <li>Implemented data analysis and visualization solutions using Python and Power BI</li>
+                            <li>Assisted in building ML models and participated in model evaluation and optimization</li>
+                            <li>Gained hands-on experience with industry-standard tools and ML frameworks</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="dashboard section" id="project_dashboards">
-            <h2 class="section-title">Project Dashboards</h2>
+            <h2 class="section-title">Featured Projects</h2>
 
             <div class="bd-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
 
@@ -150,13 +204,14 @@
                     <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 0.5rem; margin-bottom: 1.5rem;">
                         <img src="assets/img/ObesityDashbord.png" alt="Obesity Prediction" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Obesity Risk Prediction</h3>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Obesity Risk Prediction Dashboard</h3>
                     <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem; min-height: 3rem; display: flex; align-items: center;">
-                        The interactive dashboard analyzing factors influencing obesity. Use the sidebar to filter the dataset and explore patterns related to physical activity, eating habits, technology use, and more.
+                        Interactive machine learning dashboard analyzing lifestyle factors influencing obesity. Features advanced filtering, pattern recognition, and predictive insights across multiple health dimensions.
                     </p>
-                    <div style="display: flex; gap: 10px; margin-bottom: 1.5rem;">
+                    <div style="display: flex; gap: 10px; margin-bottom: 1.5rem; flex-wrap: wrap;">
                         <span style="background: #00bcd4; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem;">Machine Learning</span>
                         <span style="background: #00bcd4; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem;">AI</span>
+                        <span style="background: #00bcd4; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem;">Streamlit</span>
                     </div>
                     <div style="margin-top: auto; display: flex; gap: 15px;">
                         <a href="https://github.com/snehal201/obesity-dashboard" target="_blank" class="button" style="background: transparent; border: 1px solid white; padding: 0.5rem 1.5rem;">
@@ -172,13 +227,14 @@
                     <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 0.5rem; margin-bottom: 1.5rem;">
                         <img src="assets/img/RentPredictor.png" alt="House Price Prediction" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Germany House Prices</h3>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Germany Real Estate Price Predictor</h3>
                     <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem; min-height: 3rem; display: flex; align-items: center;">
-                        Interactive platform to estimate real estate prices and rental values across German states.
+                        Sophisticated regression model predicting residential property prices and rental values across German states. Leverages market data and property features for accurate valuations.
                     </p>
-                    <div style="display: flex; gap: 10px; margin-bottom: 1.5rem;">
+                    <div style="display: flex; gap: 10px; margin-bottom: 1.5rem; flex-wrap: wrap;">
                         <span style="background: #00bcd4; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem;">Regression</span>
                         <span style="background: #00bcd4; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem;">Python</span>
+                        <span style="background: #00bcd4; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem;">Streamlit</span>
                     </div>
                     <div style="margin-top: auto; display: flex; gap: 15px;">
                         <a href="https://github.com/snehal201/Germany_Hause_Price_Prediction_App" target="_blank" class="button" style="background: transparent; border: 1px solid white; padding: 0.5rem 1.5rem;">
@@ -194,14 +250,15 @@
         </section>
 
         <section class="work section" id="project">
-            <h2 class="section-title">Other Projects</h2>
+            <h2 class="section-title">Additional Projects</h2>
             <div class="work__container bd-grid">
 
                 <div class="work__card">
                     <img src="assets/img/work_4.png" alt="Leaf Disease" class="work__img">
                     <div class="work__content">
-                        <h3 class="work__title">Leaf Disease Detection</h3>
+                        <h3 class="work__title">Potato Leaf Disease Detection</h3>
                         <span class="work__subtitle">Deep Learning • 98% Accuracy</span>
+                        <p class="work__description">CNN-based deep learning model for automated crop disease detection using image classification.</p>
                         <a href="https://github.com/snehal201/Potato-Plant-leaf-Disease-Prediction" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
@@ -209,26 +266,29 @@
                 <div class="work__card">
                     <img src="assets/img/ResumeSccaning.png" alt="Resume Screening" class="work__img">
                     <div class="work__content">
-                        <h3 class="work__title">Resume Screening AI</h3>
-                        <span class="work__subtitle">NLP • Random Forest</span>
+                        <h3 class="work__title">Intelligent Resume Screening AI</h3>
+                        <span class="work__subtitle">NLP • Random Forest • 95% Accuracy</span>
+                        <p class="work__description">Automated resume screening system using NLP to identify top candidates efficiently.</p>
                         <a href="https://github.com/snehal201/Resume-Screening-Using-Machine-Learning" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
 
                 <div class="work__card">
-                    <img src="assets/img/work_1.jpeg" alt="British Airways" class="work__img">
+                    <img src="assets/img/work_1.jpeg" alt="Airline Satisfaction" class="work__img">
                     <div class="work__content">
-                        <h3 class="work__title">Passenger Satisfaction</h3>
+                        <h3 class="work__title">Airline Passenger Satisfaction Prediction</h3>
                         <span class="work__subtitle">XGBoost • 92% Accuracy</span>
-                        <a href="#" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
+                        <p class="work__description">Predictive model identifying key factors affecting airline customer satisfaction using advanced ensemble methods.</p>
+                        <a href="https://github.com/snehal201" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
 
                 <div class="work__card">
                     <img src="assets/img/work_5.jpg" alt="EV Charging" class="work__img">
                     <div class="work__content">
-                        <h3 class="work__title">EV Charging in Germany</h3>
-                        <span class="work__subtitle">Data Analysis • Visualization</span>
+                        <h3 class="work__title">EV Charging Infrastructure Analysis</h3>
+                        <span class="work__subtitle">Data Analysis • Geospatial Visualization</span>
+                        <p class="work__description">Comprehensive analysis of electric vehicle charging infrastructure distribution across Germany with interactive maps.</p>
                         <a href="https://github.com/snehal201/Electric-Vehicle-Charging-in-Germany" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
@@ -236,8 +296,9 @@
                 <div class="work__card">
                     <img src="assets/img/work_3.jpg" alt="Object Tracking" class="work__img">
                     <div class="work__content">
-                        <h3 class="work__title">Object Tracking</h3>
+                        <h3 class="work__title">Real-Time Object Detection & Tracking</h3>
                         <span class="work__subtitle">YOLO • Computer Vision</span>
+                        <p class="work__description">Real-time object detection and tracking system leveraging advanced YOLO architecture for video processing.</p>
                         <a href="https://github.com/snehal201/object_tracking" class="work__button">View Code <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
@@ -245,16 +306,20 @@
         </section>
 
         <section class="contact section" id="contact">
-            <h2 class="section-title">Contact & Follow</h2>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact__container bd-grid" style="display: flex; justify-content: center;">
                 <div class="wrapper">
                     <div class="buttons">
                         <div class="icons"><a href="mailto:snehaltandel200@gmail.com"><i class="fab fa-google"></i></a></div>
-                        <span>Mail</span>
+                        <span>Email</span>
                     </div>
                     <div class="buttons">
                         <div class="icons"><a href="https://www.linkedin.com/in/snehal-tandel-989a54205/" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
                         <span>LinkedIn</span>
+                    </div>
+                    <div class="buttons">
+                        <div class="icons"><a href="https://github.com/snehal201" target="_blank"><i class="fab fa-github"></i></a></div>
+                        <span>GitHub</span>
                     </div>
                 </div>
             </div>
@@ -262,18 +327,21 @@
     </main>
 
     <footer class="footer">
-        <p class="footer__title">Snehalkumar Tandel</p>
+        <p class="footer__title">Snehal Tandel</p>
+        <p class="footer__subtitle">Data Science & Machine Learning Engineer</p>
         <div class="footer__social">
             <a href="mailto:snehaltandel200@gmail.com" class="footer__icon"><i class='bx bxl-google'></i></a>
             <a href="https://www.linkedin.com/in/snehal-tandel-989a54205/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/snehal201" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
         </div>
-        <p>Thank you for visiting</p>
+        <p class="footer__copyright">© 2024 Snehal Tandel. All rights reserved.</p>
+        <p class="footer__message">Thank you for visiting my portfolio</p>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/typer.js"></script>
+    <script src="assets/js/language.js"></script>
 </body>
 </html>
